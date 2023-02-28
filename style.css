@@ -252,7 +252,9 @@ body {
 #slide1 h1 {
     position: absolute;
     color: #11140e;
+    text-shadow: 3px 3px  #fff;
     transform: translateZ(-0.5px) scale(2.5) translateX(16vw)translateY(5vh);
+    
 }
 
 .slide1__tree-animation {
@@ -297,7 +299,7 @@ body {
 /* slide 2 */
 
 #slide2 {
-    background-color: #ffd9be;  
+    background-color: #ffd9be;
     z-index:2;  
 }
 
@@ -307,9 +309,108 @@ body {
     height: 100vh;
 }
 
+.slide2__leg-animation {
+    animation: slide2__leg-movement 2s linear infinite alternate;
+}
 
+@keyframes slide2__leg-movement {
+    0% {
+        transform: translateX(0) rotate(0);
+    }
 
+    100% {
+        transform: translateX(-5px) rotate(0.5deg);
+    }
+}
 
+.slide2__arm-animation {
+    animation: slide2__arm-movement 1.5s linear infinite alternate;
+}
+
+@keyframes slide2__arm-movement {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: translateX(2px) translateY(-2px) rotate(1.5deg);
+    }
+}
+
+.slide2__arm2-animation {
+    animation: slide2__arm2-movement 1s linear infinite alternate;
+}
+
+@keyframes slide2__arm2-movement {
+    0% {
+        transform: rotate(0);
+    }
+
+    100% {
+        transform: translateX(-2.5px) rotate(-0.5deg);
+    }
+}
+
+.slide2__hat1-animation {
+    animation: slide2__hat1-movement 10s linear infinite ;
+}
+
+.slide2__hat1-animation-slower {
+    animation-duration: 15s;
+}
+
+@keyframes slide2__hat1-movement {
+    0% {
+        transform: rotate(-50deg);
+    }
+
+    50% {
+        transform:  translateX(-100px) translateY(50px) rotate(50deg);
+    }
+
+    100% {
+        transform:  translateX(200px) translateY(500px) rotate(-100deg);
+    }
+}
+
+.slide2__hat2-animation {
+    animation: slide2__hat2-movement 10s linear infinite ;
+}
+
+@keyframes slide2__hat2-movement {
+    0% {
+        transform:  translateX(-500px) rotate(-50deg);
+    }
+
+    100% {
+        transform:  translateX(500px)  rotate(40deg);
+
+    }
+}
+
+#slide2 h1 {
+    position: absolute;
+    color: #11140e;
+    text-shadow: 3px 3px  #fff;
+    transform: translateZ(0.5px) scale(0.9) translateX(28vw)translateY(64vh);
+}
+
+#slide2 img {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    width: 320px;
+    height: 240px;
+    transform: translateZ(.25px) scale(.75) translateX(-130%) translateY(-100%) rotate(-2deg);
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(240,230,220, .7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+#slide2  img:last-of-type {
+    transform: translateZ(0.4px) scale(0.55) translateX(-264%) translateY(-100%) rotate(5deg);
+}
 
 #slide3:before {
     background-image: url("https://picsum.photos/980/600");
