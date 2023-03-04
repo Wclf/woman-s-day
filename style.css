@@ -573,6 +573,7 @@ body {
 }
 
 .slide4__headscarf-animation {
+    transform-origin: center center;
     animation: slide4__headscarf-movement 2s linear infinite alternate;   
 }
 
@@ -609,6 +610,20 @@ body {
     }
 }
 
+.slide4__eyebrow-animation {
+    animation: slide4__eyebrow-movement 2s linear infinite alternate; 
+}
+
+@keyframes slide4__eyebrow-movement {
+    0% {
+        transform: rotate(0.15deg);
+    }
+
+    100% {
+        transform: rotate(-0.15deg);
+    }
+}
+
 #slide4 h1 {
     position: absolute;
     color: #11140e;
@@ -633,11 +648,167 @@ body {
     transform: translateZ(.4px) scale(.55) translateX(-120%) translateY(20%) rotate(-5deg);
 }
 
+/* slide 5 */
+#svg-slide5 {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
 #slide5:before {
-    background-image: url("https://picsum.photos/980/600");
+    background-image: url("imgs/slide5.jpg");
     transform: translateZ(-1px) scale(2);
 }
 
+.slide5__arm-animation {
+    transform-origin: center;
+    animation: slide5__arm-movement 1s linear infinite alternate;
+}
+
+@keyframes slide5__arm-movement {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(1deg);
+    }
+}
+
+.slide5__message-animation {
+    transform-origin: bottom right;
+    animation: slide5__message-movement 5s linear infinite alternate;
+}
+
+.slide5__message-animation-slow {
+    animation-duration: 2s;
+}
+
+@keyframes slide5__message-movement {
+    0% {
+        transform: rotate(-0.5deg);
+    }
+
+    100% {
+        transform: rotate(0.5deg);
+    }
+}
+
+#slide5 h1 {
+    position: absolute;
+    color: #11140e;
+    text-shadow: 3px 3px  #fff;
+    transform: translateZ(-0.5px) scale(2.5) translateX(-3vw) translateY(15vh);
+}
+
+#slide5 img {
+    position: absolute;
+    top: 50%;
+    left: 85%;
+    width: 320px;
+    height: 240px;
+    transform: translateZ(.25px) scale(.75) translateX(-130%) translateY(-100%) rotate(-2deg);
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(240,230,220, .7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+#slide5  img:last-of-type {
+    transform: translateZ(0.4px) scale(0.55) translateX(-264%) translateY(-100%) rotate(5deg);
+}
+
+
+/* slide6 */
 #slide6 {
-    background-image: url("https://picsum.photos/960/400");
+    background-color: #ffd9be;
     z-index:2;
+}
+
+#svg-slide6 {
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+}
+
+.slide6__baby-animation {
+    transform-origin: left center;
+    animation: slide6__baby-movement 1.5s linear infinite alternate;
+}
+
+@keyframes slide6__baby-movement {
+    0% {
+        transform: rotate(-0.5deg);
+    }
+
+    100% {
+        transform: rotate(0.5deg);
+    }
+}
+
+#slide6 h1 {
+    position: absolute;
+    color: #11140e;
+    text-shadow: 3px 3px  #fff;
+    transform: translateZ(0.5px) scale(0.9) translateX(54vw)translateY(70vh);
+}
+
+#slide6 img {
+    position: absolute;
+    top: 50%;
+    left: 35%;
+    width: 320px;
+    height: 240px;
+    transform: translateZ(0.25px) scale(.75) translateX(-150%) translateY(-57%) rotate(2deg);
+    padding: 10px;
+    border-radius: 5px;
+    background: rgba(240,230,220, .7);
+    box-shadow: 0 0 8px rgba(0, 0, 0, .7);
+}
+
+#slide6 img:last-of-type {
+    transform: translateZ(0.4px) scale(.55) translateX(-120%) translateY(7%) rotate(-5deg);
+}
+
+#slide7:before {
+    background-image: url("imgs/slide7.jpg");
+    transform: translateZ(-1px) scale(2);
+}
+
+#slide7 h1 {
+    position: absolute;
+    color: #11140e;
+    text-shadow: 3px 3px  #fff;
+    transform: translateZ(-0.5px) scale(2.5) translateX(-3vw) translateY(2vh);
+}
+
+#slide8 {
+    display: flex;
+    justify-content: center;
+    background-color: #242424;
+    z-index:2;
+}
+
+#slide8 h1 {
+    font-size: 3vw;
+    position: absolute;
+    color: #e8e8e8;
+    text-shadow: 3px 3px  #000;
+    transform: translateZ(0.3px) scale(1.5) translateX(0vw)translateY(20vh);
+}
+
+#logo {
+    opacity: .75;
+    position: absolute;
+    width: 20px;
+    color: #fff;
+    transform: translateY(90vh);
+}
+
+.name {
+    opacity: .75;
+    position: absolute;
+    width: 20px;
+    color: #fff;
+    transform: translateX(-2vw) translateY(90vh);
+}
