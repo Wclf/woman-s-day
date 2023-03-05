@@ -125,5 +125,90 @@
 
 /* Mobile */
 @media (max-width: 739px) {
+    #slide1 h1 {
+        font-size: 6vw;
+        transform: translateZ(-0.5px) scale(2.5) translateX(11vw)translateY(5vh);
+    }
 
+    #slide1 img {
+        transform: translateZ(0.25px) scale(.4) translateX(-150%) translateY(35%) rotate(2deg);
+    }
+
+    #slide1 img:last-of-type {
+        transform: translateZ(0.4px) scale(.2) translateX(-222%) translateY(74%) rotate(-5deg);
+    }
+
+    #slide2 h1 {
+        font-size: 5vw;
+        transform: translateZ(0.5px) scale(0.9) translateX(26vw)translateY(65vh);
+    }
+
+    #slide2 img {
+        transform: translateZ(0.25px) scale(.4) translateX(-153%) translateY(-329%) rotate(-2deg);
+    }
+
+    #slide2 img:last-of-type {
+        transform: translateZ(0.4px) scale(0.2) translateX(-388%) translateY(-505%) rotate(5deg);
+    }
+
+    #slide3 h1 {
+        font-size: 6vw;
+        transform: translateZ(-0.5px) scale(2.5) translateX(19vw)translateY(5vh);
+    }
+
+    #slide3 img {
+        transform: translateZ(0.25px) scale(.4) translateX(-150%) translateY(49%) rotate(2deg);
+    }
+
+    #slide3 img:last-of-type {
+        transform: translateZ(0.4px) scale(.2) translateX(-207%) translateY(93%) rotate(-5deg);
+    }
+
+    #slide4 h1 {
+        font-size: 5vw;
+        transform: translateZ(0.5px) scale(0.8) translateX(36vw) translateY(73vh);
+    }
+
+    #slide4 img {
+        transform: translateZ(0.25px) scale(.4) translateX(-167%) translateY(-311%) rotate(2deg);
+    }
+
+    #slide4 img:last-of-type {
+        transform: translateZ(0.4px) scale(.2) translateX(-240%) translateY(-474%) rotate(-5deg);
+    }
+
+    #slide5 h1 {
+        font-size: 5vw;
+        transform: translateZ(-0.5px) scale(2.5) translateX(7vw) translateY(1vh);
+    }
+
+    #slide5 img {
+        transform: translateZ(0.25px) scale(.4) translateX(-144%) translateY(47%) rotate(-2deg);
+    }
+
+    #slide5 img:last-of-type {
+        transform: translateZ(0.4px) scale(0.2) translateX(-378%) translateY(88%) rotate(5deg);
+    }
+
+    #slide6 h1 {
+        font-size: 3.5vw;
+        transform: translateZ(0.5px) scale(0.9) translateX(32vw) translateY(67vh);
+    }
+    
+    #slide6 img {
+        transform: translateZ(0.25px) scale(.4) translateX(-173%) translateY(-330%) rotate(2deg);
+    }
+
+    #slide6 img:last-of-type {
+        transform: translateZ(0.4px) scale(.2) translateX(-244%) translateY(-523%) rotate(-5deg);
+    }
+
+    #slide7 h1 {
+        font-size: 4vw;
+        transform: translateZ(-0.5px) scale(2.5) translateX(21vw) translateY(27vh);
+    }
+
+    .name {
+        transform: translateX(-7vw) translateY(90vh);
+    }
 }
