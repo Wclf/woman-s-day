@@ -12,10 +12,21 @@
 </head>
 
 <body>
-  <audio autoplay src="music/y2mate.com - I Believe in You.mp3"></audio>
+  <audio id="song">
+    <source src="music/y2mate.com - I Believe in You.mp3">
+  </audio>
+  <script>
+    window.addEventListener("click" , () => {
+      document.getElementById("song").play();
+    })
+    window.addEventListener("dblclick" , () => {
+      document.getElementById("song").pause();
+    })
+  </script>
 
   <div id="title" class="slide header">
     <h1>Happy <br> Women's day</h1>
+    <p class="noitce">click anywhere to turn on music (dbclick to turn off)</p>
     <svg id="woman-1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500">
       <g id="cloud_glass">
         <path class="cloud-animation"
